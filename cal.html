@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet">
+
+    <link href="nav.css" rel="stylesheet">
+    <link href="cal.css" rel="stylesheet">
+    <link href="cursor.css" rel="stylesheet">
+    <script src="index.js"></script>
+    <script src="cal.js"></script>
+
+    <link rel="icon" type="image/png" href="./img/etoile5.gif" sizes="16x16">
+
+    <title>Cage à Lapin</title>
+</head>
+
+<body>
+
+    <div class="custom-cursor"></div>
+
+    <header>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="moi.html">Moi</a>
+                <a href="moi.html#contact">Contact</a>
+            </div>
+        </div>
+
+        <div class="menu-bars" onclick="openNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+ 
+<main>   
+
+    <button class="titre">
+        <h1>Cage à Lapin</h1>
+    </button>
+
+    <div class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="./img/arduishema.png" alt="Image 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="./img/arduicode.png" alt="Image 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="./img/arduirel.png" alt="Image 3">
+            </div>
+            <div class="carousel-slide">
+                <img src="./img/Capture d'écran 2025-01-29 164935.png" alt="Image 4">
+            </div>
+            <div class="carousel-slide">
+                <img src="./img/arduisite.png" alt="Image 5">
+            </div>
+        </div>
+        <button class="carousel-button prev">❮</button>
+        <button class="carousel-button next">❯</button>
+    </div>
+
+
+    <div class="Descri-section">
+        <div class="image-row">
+            <img src="./img/html.gif" alt="HTML">
+            <img src="./img/css.gif" alt="CSS">
+            <img src="./img/js.gif" alt="JAVASCRIPT">
+            <img src="./img/php.gif" alt="PHP">
+            <img src="./img/phpmy.gif" alt="PHPMyAdmin">
+            <img src="./img/mysql.gif" alt="MySQL">
+            <img src="./img/sql.gif" alt="SQL">
+            <img src="./img/c.gif" alt="C">
+            <img src="./img/cplus.gif" alt="C++">
+
+        </div>
+        <div class="container">
+            <p>
+                <h2>Cage à Lapin</h2>
+                <p>Année : 2024</p>
+                <p>Description succincte du projet :<br>
+                    Dans le cadre du projet de fin d’année de terminale, nous avons fait une maquette de cage à lapin connecté. J’ai créé le site internet avec une base de données dans lequel il y avait les donnés des différents capteurs de mes collègues.</p>
+                <p>Cadre : Réalisé dans le cadre de la formation STI2D</p>
+                <p>Logiciels : HTML, CSS, JAVASCRIPT, PHP, phpMyAdmin, MySQL, SQL, C/C++</p>
+                <p>Résultat : Fini</p>
+                <h3>Aptitudes développées :</h3>
+                <ul>
+                    <li>Organisation du travail en équipe</li>
+                    <li>Apprentissage en autodidacte</li>
+                    <li>Adaptation</li>
+                </ul>
+        </div>
+    </div>
+
+
+    <div class="messagedefilant">
+        <div data-text=" Premiere Pro / After Effect / Flipaclip / FlipNote 3D / Kinemaster / DaVinci Resolve /
+        Photoshop / Illustrator / AffinityDesigner / AffinityPhoto /
+        Blender / Unity / UnrealEngine /
+        PHP / MySQL / SQL / phpMyAdmin /
+        HTML / CSS / JAVASCRIPT / Bulma / Bootstrap /
+        C / C++ / C# / ">
+            <span> Premiere Pro / After Effect / Flipaclip / FlipNote 3D / Kinemaster / DaVinci Resolve /
+                Photoshop / Illustrator / AffinityDesigner / AffinityPhoto /
+                Blender / Unity / UnrealEngine /
+                PHP / MySQL / SQL / phpMyAdmin /
+                HTML / CSS / JAVASCRIPT / Bulma / Bootstrap /
+                C / C++ / C# / </span>
+        </div>
+    </div>
+
+    <button class="titre2">
+        <h1>Processus de Création</h1>
+    </button>
+
+    <div class="image-text-section">
+        <div class="image-container">
+            <img class="image-main" src="./img/arduishema.png" alt="Description">
+            <img class="image-hover" src="./img/arduirel.png" alt="Hover Description">
+        </div>
+        <div class="text-container">
+            <h2>Mes composants</h2>
+            <p>Dans notre projet nous avons utilisé plusieurs capteurs Arduino :
+                <ul><li>ESP32-CAM :</li>
+                    Ce capteur nous servait de caméra dans notre maquette pour surveiller en temps réel les lapins sur le site internet.
+                    <li>DHT11 :</li>
+                    Ce capteur nous servait à mesurer la température et l'humidité de l'air. Ce qui permettait de savoir si les lapins étaient bien dans les conditions optimales, et si ce n'était pas le cas le site internet nous le signalait.
+                    <li>HX711 + Capteur de force :</li>
+                    Ce capteur nous servait à mesurer le poids des granules pour les lapins, pour savoir si ils avaient assez mangé ou non. Et si ce n'étais pas le cas le site internet nous le signalait.
+                </ul>
+                </p>
+        </div>
+    </div>
+
+    <div class="image-text-section">
+        <div class="text-container">
+            <h2>Notre site internet</h2>
+            <p>Durant notre projet nous devions créer un site internet. J'ai donc fais le site qui est composer de plusieurs pages :
+                <ul>
+                    <li>Une page d'accueil (Accueil / Les Lapins) :</li>
+                    Elle est composer de cards des lapins, avec leurs dates d'anniversaires, leurs noms, une photo du lapin, et une bref description. <br>
+                    Grâce au + on peut ajouté un lapin, modifier un lapin, supprimer un lapin.
+                    <li>Une page de données (Données) :</li>
+                    Elle donne les données des différents capteurs comme celle de la température, l'humidité, la luminosité, la caméra, la date et l'heure.
+                    <li>Une page de contact (Contact) :</li>
+                    Elle affiche à l'utilisateur de nous contacter, et de remplire un formulaire de satisfaction. <br>
+                    Elle m'a permis de faire un premier text pour ma base de données.
+                </ul>
+            </p>
+        </div>
+        <div class="image-container">
+            <img class="image-main" src="./img/Capture d'écran 2025-01-29 164935.png" alt="Description">
+            <img class="image-hover" src="./img/arduisite.png" alt="Hover Description">
+        </div>
+    </div>
+
+
+
+    <div class="button-container">
+        <a href="fh.html" class="prev-project-btn" onclick="goToPreviousProject()">
+          <i class="arrow left"></i> <b>Projet précédent</b>
+        </a>
+        <a href="sc2.html" class="next-project-btn" onclick="goToNextProject()">
+          <b>Projet suivant</b> <i class="arrow right"></i>
+        </a>
+      </div>
+
+
+
+    <div class="messagedefilant">
+        <div data-text=" Premiere Pro / After Effect / Flipaclip / FlipNote 3D / Kinemaster / DaVinci Resolve /
+        Photoshop / Illustrator / AffinityDesigner / AffinityPhoto /
+        Blender / Unity / UnrealEngine /
+        PHP / MySQL / SQL / phpMyAdmin /
+        HTML / CSS / JAVASCRIPT / Bulma / Bootstrap /
+        C / C++ / C# / ">
+            <span> Premiere Pro / After Effect / Flipaclip / FlipNote 3D / Kinemaster / DaVinci Resolve /
+                Photoshop / Illustrator / AffinityDesigner / AffinityPhoto /
+                Blender / Unity / UnrealEngine /
+                PHP / MySQL / SQL / phpMyAdmin /
+                HTML / CSS / JAVASCRIPT / Bulma / Bootstrap /
+                C / C++ / C# / </span>
+        </div>
+    </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <!-- Image à gauche -->
+            <div class="footer-left">
+                <img src="./img/gfgffgfg.gif" alt="logo">
+            </div>
+
+            <!-- Contacts au centre -->
+            <div class="footer-center">
+                <p><b>Contactez-moi :</b></p>
+                <p>Email : stella.rssht@gmail.com</p>
+                <p>Téléphone : +33 6 38 36 26 31</p>
+            </div>
+
+            <!-- Suivi à droite -->
+            <div class="footer-right">
+                <p><b>Suivez-moi :</b></p>
+                <a href="https://www.instagram.com/stellito_rht?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank">Instagram</a> : stellito_rht<br>
+                <a href="https://www.youtube.com/@Stellito1306/" target="_blank">Youtube</a> : Stellito1306<br>
+                <a href="https://www.tiktok.com/@stellito_rht?is_from_webapp=1&sender_device=pc"
+                    target="_blank">TikTok</a> : stellito_rht<br>
+            </div>
+        </div>
+        <p class="footer-legal">Stella RASSCHAERT © 2025 - Tous droits réservés - Mentions légales</p>
+    </footer>
+</body>
+</html>

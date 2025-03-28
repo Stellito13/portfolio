@@ -1,0 +1,256 @@
+.cards-container {
+    padding: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 15px;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card {
+    width: 360px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 32px -10px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+.card__title {
+    margin-bottom: 8px; /* Tighter spacing */
+    line-height: 1.2;
+}
+
+.text-and-link {
+    margin: 0 30px 60px 30px; /* Fixed space for link */
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 16px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.card__content::before,
+.card__content::after {
+    content: '';
+    width: 120%;
+    height: 120px;
+    position: absolute;
+    left: -10%;
+    z-index: -1;
+}
+
+.card__content::before {
+    top: -119px;
+    clip-path: ellipse(60% 80px at bottom center);
+    background-color: inherit;
+}
+
+.card__content::after {
+    bottom: -79px;
+    clip-path: ellipse(60% 80px at top center);
+    background-color: inherit;
+}
+
+
+.card__link {
+    position: absolute;
+    bottom: 30px; /* Adjusted position */
+    left: 50%;
+    transform: translate(-50%, 10%);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    opacity: 0;
+    z-index: 2;
+}
+
+/* Hover effects */
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:hover img {
+    transform: scale(1);
+}
+
+.card:hover .card__content {
+    transform: translateY(-100%);
+}
+
+.card:hover .card__link {
+    opacity: 1;
+    transform: translate(-50%, 0);
+    transition: opacity 0.5s 0.3s ease-in-out, transform 0.5s 0.3s ease-in-out;
+}
+
+.card {
+    transition: transform 0.5s ease-in-out;
+}
+
+.card img {
+    transition: transform 0.5s ease-in-out;
+}
+
+.card__content {
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                background-color 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card__link {
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
+}
+
+/* Hover states remain the same */
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:hover img {
+    transform: scale(1);
+}
+
+.card:hover .card__content {
+    transform: translateY(-100%);
+}
+
+.card:hover .card__link {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+
+/* Theme colors */
+/* Theme colors with transitions */
+.card[data-theme="yellow"] .card__content,
+.card[data-theme="yellow"] .card__content::before,
+.card[data-theme="yellow"] .card__content::after { 
+    background-color: #F3CF50;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card[data-theme="yellow"]:hover .card__content,
+.card[data-theme="yellow"]:hover .card__content::before,
+.card[data-theme="yellow"]:hover .card__content::after { 
+    background-color: rgb(250, 224, 168);
+}
+
+.card[data-theme="pink"] .card__content,
+.card[data-theme="pink"] .card__content::before,
+.card[data-theme="pink"] .card__content::after { 
+    background-color: #ED3F8F;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card[data-theme="pink"]:hover .card__content,
+.card[data-theme="pink"]:hover .card__content::before,
+.card[data-theme="pink"]:hover .card__content::after { 
+    background-color: #f79fc8;
+}
+
+.card[data-theme="purple"] .card__content,
+.card[data-theme="purple"] .card__content::before,
+.card[data-theme="purple"] .card__content::after { 
+    background-color: #A5379F;
+    color: white;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card[data-theme="purple"]:hover .card__content,
+.card[data-theme="purple"]:hover .card__content::before,
+.card[data-theme="purple"]:hover .card__content::after { 
+    background-color: #d686d2;
+    color: black;
+}
+
+.card[data-theme="red"] .card__content,
+.card[data-theme="red"] .card__content::before,
+.card[data-theme="red"] .card__content::after { 
+    background-color: #DD5643;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card[data-theme="red"]:hover .card__content,
+.card[data-theme="red"]:hover .card__content::before,
+.card[data-theme="red"]:hover .card__content::after { 
+    background-color: #f2968a;
+}
+
+.card[data-theme="green"] .card__content,
+.card[data-theme="green"] .card__content::before,
+.card[data-theme="green"] .card__content::after { 
+    background-color: #AECF45;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card[data-theme="green"]:hover .card__content,
+.card[data-theme="green"]:hover .card__content::before,
+.card[data-theme="green"]:hover .card__content::after { 
+    background-color: #d7eb93;
+}
+
+.card[data-theme="blue"] .card__content,
+.card[data-theme="blue"] .card__content::before,
+.card[data-theme="blue"] .card__content::after { 
+    background-color: #3859AF;
+    color: white;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card[data-theme="blue"]:hover .card__content,
+.card[data-theme="blue"]:hover .card__content::before,
+.card[data-theme="blue"]:hover .card__content::after { 
+    background-color: #829de0;
+    color: black;
+}
+
+
+@media (max-width: 768px) {
+    .card__link {
+        opacity: 0; /* Masquer le bouton par défaut */
+        transform: translateY(20px); /* Déplacer le bouton vers le bas */
+        transition: opacity 0.5s ease, transform 0.5s ease; /* Transition pour l'animation */
+    }
+
+    .card__link.visible {
+        opacity: 1; /* Rendre le bouton visible */
+        transform: translateY(0); /* Remettre le bouton à sa position d'origine */
+    }
+}
+
+
+

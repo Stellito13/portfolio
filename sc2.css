@@ -1,0 +1,214 @@
+.titre {
+    font-size: 12px;
+    margin-top: 7rem;
+    margin-left: 2rem;
+    background-color: #DD5643;
+    width: 20%;
+    border: none;
+    cursor: default;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .titre {
+      width: 90%; /* Ajuster la largeur pour les petits écrans */
+      margin: 15px 20px;
+      
+  }
+}
+
+.titre2 {
+    font-size: 12px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    background-color: #DD5643;
+    width: 20%;
+    border: none;
+    cursor: default;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .titre2 {
+      width: 90%; /* Ajuster la largeur pour les petits écrans */
+      margin: 15px 20px;
+      
+  }
+}
+
+
+
+  /* Texte défilant */
+  .messagedefilant {
+    font-family: 'Lovelo';
+    display: block;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    height: 60px;
+    color : white;
+  }
+   
+  .messagedefilant div {
+    position: absolute;
+    min-width: 100%; /* au minimum la largeur du conteneur */
+  }
+   
+  .messagedefilant div span, 
+  .messagedefilant div:after {
+    position: relative;
+    display: inline-block;
+    font-size: 3rem;
+    white-space: nowrap;
+    top:0;
+  }
+   
+  .messagedefilant div span {
+    animation: defilement 45s infinite linear;
+    background-color: #ffd000;
+  }
+   
+  .messagedefilant div:after {
+    position: absolute;
+    top:0; left:0;
+    content:attr(data-text);
+    animation: defilement2 45s infinite linear;
+    background-color: #ffd000;
+  }
+   
+  @keyframes defilement {
+    0% { margin-left: 0; }
+    100% { margin-left: -100%; }
+  }
+   
+  @keyframes defilement2 {
+    0% { margin-left: 100%; }
+    100% { margin-left: 0%; }
+  }
+
+
+
+    /* Texte défilant */
+    .messagedefilant2 {
+        font-family: 'Lovelo';
+        display: block;
+        margin: auto;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        max-width: 1920px;
+        height: 60px;
+        color : white;
+      }
+       
+      .messagedefilant2 div {
+        position: absolute;
+        min-width: 100%; /* au minimum la largeur du conteneur */
+      }
+       
+      .messagedefilant2 div span, 
+      .messagedefilant2 div:after {
+        position: relative;
+        display: inline-block;
+        font-size: 3rem;
+        white-space: nowrap;
+        top:0;
+      }
+       
+      .messagedefilant2 div span {
+        animation: defilement 15s infinite linear;
+        background-color: #ffd000;
+      }
+       
+      .messagedefilant2 div:after {
+        position: absolute;
+        top:0; left:0;
+        content:attr(data-text);
+        animation: defilement2 15s infinite linear;
+        background-color: #ffd000;
+      }
+       
+      @keyframes defilement {
+        0% { margin-left: 0; }
+        100% { margin-left: -100%; }
+      }
+       
+      @keyframes defilement2 {
+        0% { margin-left: 100%; }
+        100% { margin-left: 0%; }
+      }
+
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Espace les boutons */
+    margin: 30px 20px; /* Espace autour des boutons */
+  }
+  
+  .prev-project-btn, .next-project-btn {
+    display: inline-flex; /* Permet d'aligner le texte et l'icône */
+    align-items: center; /* Alignement vertical du texte et de l'icône */
+    padding: 10px 20px;
+    border: none;
+    background-color: #DD5643;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .prev-project-btn:hover {
+    transform: translateX(-5px);
+  }
+  
+  .next-project-btn:hover {
+    transform: translateX(5px);
+  }
+  
+  .arrow {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    margin: 0 10px; /* Espace autour de la flèche */
+  }
+  
+  .left {
+    border-right: 8px solid white;
+  }
+  
+  .right {
+    border-left: 8px solid white;
+  }
+  
+  @media (max-width: 768px) {
+    .image-text-section {
+        display: flex; /* Utiliser flexbox pour le conteneur */
+        flex-direction: column; /* Empiler les éléments verticalement */
+        align-items: right; /* Centrer les éléments horizontalement */
+    }
+  
+    .image-container {
+        order: 1; /* Placer l'image en premier */
+        width: 100%; /* Ajuster la largeur de l'image pour les petits écrans */
+        margin-bottom: 15px; /* Ajouter de l'espace entre l'image et le texte */
+    }
+  
+    .text-container {
+        order: 2; /* Placer le texte après l'image */
+        width: 90%; /* Ajuster la largeur du conteneur de texte */
+        text-align: left; /* Centrer le texte */
+        margin: 1%;
+    }
+  
+    .image-main, .image-hover {
+        width: 100%; /* S'assurer que les images s'adaptent à la largeur du conteneur */
+        height: auto; /* Conserver les proportions de l'image */
+    }
+  }

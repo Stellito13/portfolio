@@ -1,0 +1,744 @@
+@font-face {
+    font-family: 'Lovelo';
+    src: url('./typo/Lovelo Black.otf') format('opentype');
+  }
+    
+  
+  .kanit-medium {
+    font-family: "Kanit", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  
+  
+  
+  body {
+    font-family: 'Kanit', sans-serif;
+    cursor: none;
+  }
+
+
+
+
+  .etoile1 {
+    position: absolute;
+    z-index: 3;
+    width: 14%;
+    transform: rotate(-17deg);
+    right: 88%;
+  }
+  
+  @media (max-width: 768px) {
+    .etoile1 {
+      right: 86%;
+      bottom: 95%;
+      /* Ajustement spécifique pour les écrans de téléphone */
+    }
+  }
+  
+  .etoile2 {
+    position: absolute;
+    z-index: 3;
+    width: 9%;
+    transform: rotate(20deg);
+    right: 76%;
+  }
+  
+  @media (max-width: 768px) {
+    .etoile2 {
+      right: 78%;
+      bottom: 94%;
+      /* Ajustement spécifique pour les écrans de téléphone */
+    }
+  }
+  
+  .etoile3 {
+    position: absolute;
+    z-index: 3;
+    width: 12%;
+    transform: rotate(40deg);
+    right: 5%;
+  }
+  
+  @media (max-width: 768px) {
+    .etoile3 {
+      right: 4%;
+      bottom: 93%;
+      /* Ajustement spécifique pour les écrans de téléphone */
+    }
+  }
+  
+  .etoile4 {
+    position: absolute;
+    z-index: 3;
+    width: 7%;
+    transform: rotate(44deg);
+    right: 7%;
+    bottom: 30%;
+  }
+  
+  @media (max-width: 768px) {
+    .etoile4 {
+      right: 6%;
+      bottom: 71%;
+      /* Ajustement spécifique pour les écrans de téléphone */
+    }
+  }
+  
+  .etoile5 {
+    position: absolute;
+    z-index: 3;
+    width: 10%;
+    transform: rotate(-14deg);
+    right: 65%;
+    bottom: 27%;
+  }
+  
+  @media (max-width: 768px) {
+    .etoile5 {
+      bottom: 70%;
+      right: 78%;
+      /* Ajustement spécifique pour les écrans de téléphone */
+    }
+  }
+  
+  .etoile6 {
+    position: absolute;
+    z-index: 3;
+    width: 12%;
+    transform: rotate(144deg);
+    bottom: 26%;
+  }
+  
+  @media (max-width: 768px) {
+    .etoile6 {
+      bottom: 71%;
+      /* Ajustement spécifique pour les écrans de téléphone */
+    }
+  }
+
+  .etoile7 {
+    position: absolute;
+    z-index: 3;
+    width: 6%;
+    transform: rotate(29deg);
+    right: 74%;
+    bottom: 8%;
+  }
+
+  @media (max-width: 768px) {
+    .etoile7 {
+      width: 9%;
+      right: 3%;
+      bottom: 59%;
+      /* Ajustement spécifique pour les écrans de téléphone */
+    }
+  }
+
+
+  .etoile8 {
+    position: absolute;
+    z-index: 3;
+    width: 5%;
+    transform: rotate(-127deg);
+    right: 95%;
+    bottom: 2%;
+  }
+
+  @media (max-width: 768px) {
+    .etoile8 {
+      width: 12%;
+      right: 86%;
+      bottom: 53%;
+      /* Ajustement spécifique pour les écrans de téléphone */
+    }
+  }
+
+
+
+  .etoile9 {
+    position: absolute;
+    z-index: 3;
+    width: 11%;
+    transform: rotate(49deg);
+    right: 50%;
+    bottom: -10%;
+  }
+
+  @media (max-width: 768px) {
+    .etoile9 {
+      width: 14%;
+      right: 2%;
+      bottom: 43%;
+      /* Ajustement spécifique pour les écrans de téléphone */
+    }
+  }
+
+
+  .etoile10 {
+    position: absolute;
+    z-index: 3;
+    width: 9%;
+    transform: rotate(12deg);
+    right: 82%;
+    bottom: -40%;
+  }
+
+  @media (max-width: 768px) {
+    .etoile10 {
+      right: 85%;
+      bottom: 19%;
+      /* Ajustement spécifique pour les écrans de téléphone */
+    }
+  }
+  
+  .etoile11 {
+    position: absolute;
+    z-index: 3;
+    width: 11%;
+    transform: rotate(-29deg);
+    right: 10%;
+    bottom: -74%;
+  }
+
+  @media (max-width: 768px) {
+    .etoile11 {
+      width: 12%;
+      right: 3%;
+      bottom: 15%;
+      /* Ajustement spécifique pour les écrans de téléphone */
+    }
+  }
+  
+
+  .etoile12 {
+    position: absolute;
+    z-index: 3;
+    width: 12%;
+    transform: rotate(36deg);
+    right: 6%;
+    bottom: -98%;
+  }
+
+  @media (max-width: 768px) {
+    .etoile12 {
+      right: 3%;
+      bottom: -10%;
+      /* Ajustement spécifique pour les écrans de téléphone */
+    }
+  }
+
+  .etoile13 {
+    position: absolute;
+    z-index: 3;
+    width: 7%;
+    transform: rotate(-17deg);
+    right: 17%;
+    bottom: -94%;
+  }
+
+  @media (max-width: 768px) {
+    .etoile13 {
+      right: 17%;
+      bottom: -9%;
+      /* Ajustement spécifique pour les écrans de téléphone */
+    }
+  }
+
+  .etoile14 {
+    position: absolute;
+    z-index: 3;
+    width: 6%;
+    transform: rotate(2deg);
+    right: 74%;
+    bottom: -152%;
+  }
+
+  @media (max-width: 768px) {
+    .etoile14 {
+      width: 12%;
+      right: 84%;
+      bottom: -59%;
+      /* Ajustement spécifique pour les écrans de téléphone */
+    }
+  }
+
+  .etoile15 {
+    position: absolute;
+    z-index: 3;
+    width: 8.5%;
+    transform: rotate(-11deg);
+    right: 79%;
+    bottom: -152%;
+  }
+
+  @media (max-width: 768px) {
+    .etoile15 {
+      right: 77%;
+      bottom: -59%;
+      /* Ajustement spécifique pour les écrans de téléphone */
+    }
+  }
+
+
+
+
+
+.gif1 {
+    position: absolute;
+    z-index: 3;
+    width: 25%;
+    left: 63%;
+    top: 83%;
+}
+
+.gif2 {
+  position: absolute;
+  z-index: 3;
+  width: 25%;
+  left: 14%;
+  top: 140%;
+}
+
+@media (max-width: 768px) {
+  .gif1,
+  .gif2 {
+      display: none; /* Cacher les GIFs sur mobile */
+  }
+}
+
+
+
+
+.bio-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin: 2rem auto;
+    max-width: 90%;
+    padding-right: 10%;
+  }
+  
+  .bio-section img {
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    transform: rotate(-6deg);
+    position: relative;
+    z-index: 2; /* Places image above container */
+    margin-right: -230px;
+    
+  }
+  
+  .bio-button {
+    position: absolute;
+    bottom: -30px;
+    right: 35px;
+    background-color: #DD5643;
+    border: 10px solid white;
+    border-radius: 30px;
+    padding: 15px 25px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .bio-button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  .container {
+      background-color: #ffd000;
+      border-radius: 20px;
+      padding: 20px;
+      padding-left: 200px;
+      margin: 0;
+      text-align: left, top;
+      width: 50%;
+      font-size: 120%;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+  }
+
+  @media (max-width: 768px) {
+    .bio-section {
+      padding-right: 0;
+  
+      left: 5%;
+  
+      /* Supprimer le padding pour les petits écrans */
+    }
+  
+    .bio-section img {
+      right: 25%;
+      width: 60%;
+    }
+  
+    .container {
+      align-items: center;
+      margin: 0;
+      width: 50%;
+      /* Ajuster la largeur pour les petits écrans */
+      font-size: 50%;
+      /* Réduire la taille de la police pour les petits écrans */
+      padding: 15px 10px;
+      /* Réduire le padding pour les petits écrans */
+      padding-left: 130px;
+    }
+  
+    .bio-button {
+      bottom: -10%;
+      /* Ajuster la position pour les petits écrans */
+      right: 4%;
+      /* Ajuster la position pour les petits écrans */
+      border: 5px solid white;
+      /* Réduire l'épaisseur de la bordure */
+      border-radius: 25px;
+      /* Réduire le rayon de la bordure */
+      padding: 3% 7%;
+      /* Ajuster le padding pour les petits écrans */
+      font-size: 2.3vw;
+    }
+  }
+  
+
+  /* Texte défilant */
+.messagedefilant {
+    font-family: 'Lovelo';
+    display: block;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    height: 60px;
+    color : white;
+  }
+   
+  .messagedefilant div {
+    position: absolute;
+    min-width: 100%; /* au minimum la largeur du conteneur */
+  }
+   
+  .messagedefilant div span, 
+  .messagedefilant div:after {
+    position: relative;
+    display: inline-block;
+    font-size: 3rem;
+    white-space: nowrap;
+    top:0;
+  }
+   
+  .messagedefilant div span {
+    animation: defilement 45s infinite linear;
+    background-color: #ffd000;
+  }
+   
+  .messagedefilant div:after {
+    position: absolute;
+    top:0; left:0;
+    content:attr(data-text);
+    animation: defilement2 45s infinite linear;
+    background-color: #ffd000;
+  }
+   
+  @keyframes defilement {
+    0% { margin-left: 0; }
+    100% { margin-left: -100%; }
+  }
+   
+  @keyframes defilement2 {
+    0% { margin-left: 100%; }
+    100% { margin-left: 0%; }
+  }
+
+  @media (max-width: 768px) {
+    .messagedefilant {
+      height: 50px;
+      /* Ajuster la hauteur pour les petits écrans */
+    }
+  
+    .messagedefilant div span,
+    .messagedefilant div:after {
+      font-size: 1.5rem;
+      /* Réduire davantage la taille de la police pour les petits écrans */
+    }
+  }
+
+
+
+.xp {
+    font-size: 12px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    background-color: #DD5643;
+    width: 20%;
+    border: none;
+    cursor: default;
+    pointer-events: none;
+}
+@media (max-width: 768px) {
+  .xp {
+      width: 90%; /* Ajuster la largeur pour les petits écrans */
+      margin: 15px 20px;
+      
+  }
+}
+
+
+.timeline-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 900px; /* Increased height to accommodate the bottom block */
+    padding: 100px 0;
+    margin: 50px 0;
+}
+
+.decorative-line {
+    position: absolute;
+    width: 10px;
+    height: 500px;
+    background-color: #DD5643;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.decorative-line::before,
+.decorative-line::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #DD5643;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.decorative-line::before {
+    top: -20px;
+}
+
+.decorative-line::after {
+    bottom: -20px;
+}
+
+.decorative-line .middle-dot {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-color: #DD5643;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.experience-block {
+    position: absolute;
+    width: 400px;
+    padding: 30px;
+    background-color: #ffd000;
+    border-radius: 15px;
+    opacity: 0;
+    transform: translateY(100px) scale(0.9);
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: blur(5px);
+}
+
+
+.experience-block.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+}
+
+
+.experience-block.left {
+    right: 55%;
+    top: 0;
+    transform: translateX(-100px) translateY(50px) scale(0.9);
+}
+
+.experience-block.right {
+    left: 55%;
+    top: 20%; /* Monté de 50% à 35% */
+    transform: translateY(-50%);
+    transform: translateX(100px) translateY(50px)
+}
+
+
+.experience-block.bottom {
+    left: 15%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    width: 1000px; /* Bloc plus large */
+    transform: translateY(100px) scale(0.9);
+}
+
+
+.experience-block.left.visible,
+.experience-block.right.visible,
+.experience-block.bottom.visible {
+    transform: translateX(0) translateY(0) scale(1);
+}
+
+
+@media (max-width: 768px) {
+  .timeline-container {
+    display: flex; /* Utiliser flexbox pour empiler les éléments */
+    flex-direction: column; /* Empiler les éléments verticalement */
+    align-items: center; /* Centrer les éléments horizontalement */
+    padding: 20px 0; /* Ajuster le padding pour les petits écrans */
+}
+
+  .experience-block.left {
+    right: 5%;
+      width: 80%; /* Largeur des blocs */
+      padding: 15px; /* Ajuster le padding */
+      font-size: 14px; /* Taille de la police */
+      margin: 10px 0; /* Ajouter de l'espace entre les blocs */
+      background-color: #ffd000; /* Couleur de fond pour les blocs */
+      border-radius: 10px; /* Arrondir les coins des blocs */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ajouter une ombre pour un effet de profondeur */
+  }
+
+  .experience-block.experience-block.right {
+    left: 5%;
+      width: 80%; /* Largeur des blocs */
+      padding: 15px; /* Ajuster le padding */
+      font-size: 14px; /* Taille de la police */
+      margin: 80px 10px; /* Ajouter de l'espace entre les blocs */
+      background-color: #ffd000; /* Couleur de fond pour les blocs */
+      border-radius: 10px; /* Arrondir les coins des blocs */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ajouter une ombre pour un effet de profondeur */
+  }
+
+  .experience-block.bottom {
+    left: 5%;
+      width: 80%; /* Largeur des blocs */
+      padding: 15px; /* Ajuster le padding */
+      font-size: 14px; /* Taille de la police */
+      margin: -10px 10px; /* Ajouter de l'espace entre les blocs */
+      background-color: #ffd000; /* Couleur de fond pour les blocs */
+      border-radius: 10px; /* Arrondir les coins des blocs */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ajouter une ombre pour un effet de profondeur */
+  }
+
+  .decorative-line {
+    display: none; /* Cacher la ligne décorative sur mobile */
+    
+}
+}
+
+
+
+
+
+
+
+.contact-form {
+    background-color: #ffd000;
+    border-radius: 20px;
+    padding: 50px 50px;
+    max-width: 600px;
+    margin: 80px auto;
+    position: relative;
+    padding-bottom: 80px; /* Space for button */
+}
+
+.form-group {
+    margin: 0 30px 20px 30px; /* Added left and right margins */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.submit-button {
+    background-color: #DD5643;
+    border: 10px solid white;
+    border-radius: 30px;
+    padding: 15px 40px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: -40px;
+    right: 30px;
+}
+
+.submit-button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+
+
+
+
+  .popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Lovelo', sans-serif;
+    animation: slideIn 0.5s ease;
+    z-index: 10000;
+}
+
+.popup.success {
+    background-color: #ffd000;
+}
+
+.popup.error {
+    background-color: #DD5643;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

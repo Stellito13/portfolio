@@ -1,0 +1,153 @@
+.kanit-thin {
+    font-family: "Kanit", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body {
+    font-family: "Kanit", serif;
+}
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(3px);
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.overlay a {
+  font-family: "Kanit", serif;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #DD5643;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #efa298;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  font-family: Arial, sans-serif;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.menu-bars {
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  z-index: 4;
+  cursor: pointer;
+  width: 60px;
+  padding: 10px;
+}
+
+.menu-bars span {
+  display: block;
+  width: 120%;
+  height: 12px;
+  background-color: #DD5643;
+  margin: 4px 0;
+  border-radius: 50px;
+  border: 6px solid white;
+}
+
+
+
+/*----------------footer----------------*/
+
+/* Style global pour le footer */
+footer {
+  background-color: #DD5643;
+  color: white;
+  padding: 1%;
+  text-align: center;
+  font-size: 26px;
+  margin-top: auto;
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.footer-left {
+  width: 500px; /* Adjust based on your logo size */
+}
+
+.footer-left img {
+  width: 80%;
+  height: auto;
+  display: block;
+}
+
+.footer-center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.footer-right {
+  width: 400px; /* Matches the left side for balance */
+  text-align: center;
+}
+
+.footer-right a {
+  color: white;
+  text-decoration: none;
+}
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+.footer-legal { /* New class for legal mentions */
+  text-align: center; /* Center the text */
+  font-size: medium; /* Smaller font size */
+  margin-top: 20px; /* Add some space above */
+  width: 100%; /* Ensure full width */
+}
+
+
+@media (max-width: 768px) {
+  footer {
+    font-size: 12px; /* Réduire la taille du texte pour la version mobile */
+  }
+
+  footer img {
+    width: 70px; /* Réduire la taille de l'image pour la version mobile */
+  }
+
+  .footer-legal {
+    font-size: 10px; /* Réduire la taille du texte pour la version mobile */
+  }
+
+  .footer-right,
+  .footer-left {
+    font-size: 10px; /* Réduire la taille du texte pour la version mobile */
+  }
+}
